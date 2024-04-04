@@ -4,9 +4,9 @@
 # Terminal-Guard
 Terminal-Guard is a minimalistic Pseudo-Terminal (PTY) that controls interactive programs. It gives the user complete control over the interactions between the Parent-Child processes. The PTY is totally controlled by a -YAML configuration file written in lua.
 
-The tool is aimed to be used for security and linux education; it is inspired by applications like https://overthewire.org/wargames/, but gives the developer much more flexibility due to its design.
+The tool is aimed at security and Linux education; applications like https://overthewire.org/wargames/ inspire it, but it gives the developer much more flexibility due to its design.
 
-*Disclaimer, the source code provided is only an older version of the tool, updated branches will be available in August 2024 for copyright requirements; for more information, contact sam.nour@tum.de*.
+*Disclaimer: the source code provided is only an older version of the tool; updated branches will be available in August 2024 for copyright requirements; for more information, contact sam.nour@tum.de*.
 
 
 ### Table of contents  
@@ -18,8 +18,8 @@ The tool is aimed to be used for security and linux education; it is inspired by
 ### Requirements
 - Curl
 - Cargo:
-	-  To get the latest release install the current stable release of Rust
+	-  To get the latest release, install the current stable release of Rust
 	- ``curl https://sh.rustup.rs -sSf | sh``
-### Architecture
+
 
 
