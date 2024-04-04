@@ -18,4 +18,4 @@ The tool is aimed to be used for security and linux education; it is inspired by
 	-  To get the latest release install the current stable release of Rust
 	- ``curl https://sh.rustup.rs -sSf | sh``
 ### Architecture
-![pptCC69 pptm  -  AutoRecovered](https://github.com/SamNour/Terminal-Guard/assets/96638051/fa7f6ebd-d05a-437a-af40-2e2861a537ef)
+![final](https://github.com/SamNour/Terminal-Guard/assets/96638051/450d09c7-f8bd-4f37-bdb7-29950e9004ec)
