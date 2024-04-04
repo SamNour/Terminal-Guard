@@ -1,0 +1,71 @@
+config:
+  - id: init
+    when: lua
+    code: |
+      print("Hello, Lua!")
+      flag = "abcd-efgh-ijkl"
+
+  - id: xxxx
+    when: keyboard
+    trigger: qw
+    code: |
+      sendKeys2(" OKOKOK ")
+ 
+  - id: detect flag
+    when: keyboard
+    trigger: test\r
+    code: |
+      if 1==prgRunning() then
+        print("\r\nHere is your flag - ",flag,"\r")
+        backSpace()
+        ret = sendKeys("pwd\n",PROMPT_RE)
+        print("DIR : ",os.getenv("PWD"),"\r")
+        print("Current directory is: ",ret,"\r")
+        io.write("Hello\r\nWorld")
+        io.flush()
+        sendKeys2("\n")
+      end
+
+  - id: test 1
+    when: keyboard
+    trigger: hugh\r
+    code: |
+      backSpace()
+      sendKeys("\n",PROMPT_RE)
+      sendKeys2("echo 'that was dumb!'\n")
+      sendKeys2("echo 'but now its awesome!'\n")
+
+  - id: example of starting a program
+    when: keyboard
+    trigger: xxx\r
+    code: |
+      print("Naughty naughty!!!!\r")
+      backSpace()
+      sendKeys("\n",PROMPT_RE)
+
+  - id: example of a function
+    when: keyboard
+    trigger: tiago\r
+    code: |
+      print("\r\nHello, World from LUA\r")
+      backSpace()
+      sendKeys("\n",PROMPT_RE)
+
+  - id: get running program
+    when: keyboard
+    trigger: run\r
+    code: |
+      print("\r\nGetRunning Program\r")
+      n = prgRunning()
+      print("There are " .. n .. " programs running\r")
+      backSpace()
+      sendKeys("\n",PROMPT_RE)
+ 
+  - id: simple trigger
+    when: term
+    trigger: i saw a bird
+    code: |
+      --print("Match on ",LUA_GLOBAL_MATCH)
+      io.write("XXX NO YOU DID NOT SEE A BIRD!!! XXX")
+      io.flush()
+

@@ -1,0 +1,4 @@
+BEGIN OF FILE
+the rain in spain stays mainly in the plain
+i saw a bird
+END OF FILE

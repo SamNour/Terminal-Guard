@@ -1,0 +1,22 @@
+[package]
+name = "minmux"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc = "0.2"
+nix = "0.26"
+clap = "2.33"
+termcolor = "1.2.0"
+colored = "2.0.4"
+encoding_rs = "0.8.33"
+serde = { version = "1.0.145", features = ["derive"] }
+regex = "1.9.4"
+mlua = { version = "0.9.1", features = ["lua54", "vendored"] }
+serde_derive = "1.0"
+toml = "0.8.2"
+serde_json = "1.0.107"
+lazy_static = "1.4"
+serde_yaml = "0.9.27"
