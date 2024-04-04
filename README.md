@@ -6,7 +6,7 @@ Terminal-Guard is a minimalistic Pseudo-Terminal (PTY) that controls interactive
 
 The tool is aimed at security and Linux education; applications like https://overthewire.org/wargames/ inspire it, but it gives the developer much more flexibility due to its design.
 
-*Disclaimer: the source code provided is only an older version of the tool; updated branches will be available in August 2024 for copyright requirements; for more information, contact sam.nour@tum.de*.
+*Disclaimer: the source code provided does not work as intended; updated branches will be available in August 2024 for copyright requirements; for more information, contact sam.nour@tum.de*.
 
 
 ### Table of contents  
