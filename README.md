@@ -18,3 +18,4 @@ The tool is aimed to be used for security and linux education, it is inspired by
 	-  To get the latest release install the current stable release of Rust
 	- ``curl https://sh.rustup.rs -sSf | sh``
 ### Architecture
+![Uploading pptCC69.pptm  -  AutoRecovered.gif…]()
