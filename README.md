@@ -11,9 +11,8 @@ The tool is aimed at security and Linux education; applications like https://ove
 
 ### Table of contents  
 - [Requirements](#requirements)
- - [Architecture](#architecture) 
- - [How it works](#how-it-works) 
- - [Example](#example) 
+ - [Help](#help) 
+
 
 ### Requirements
 - Curl
@@ -22,4 +21,24 @@ The tool is aimed at security and Linux education; applications like https://ove
 	- ``curl https://sh.rustup.rs -sSf | sh``
 
 
+## Help
+```$ cargo run -- --help
+Man-in-the-Middle Terminal Multiplexer (MinMux) 
 
+USAGE:
+    minmux --config <FILE> --exec <EXEC> --prompt <PROMPT>
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+OPTIONS:
+    -c, --config <FILE>      The YAML file to read [default: setup.yaml]
+    -e, --exec <EXEC>        The executable to run in the terminal [default: /bin/bash]
+    -p, --prompt <PROMPT>    The prompt to look for [default: \[\w+@.+\s+.*\]\$\s+]
+
+```
+
+## To run
+example
+``` cargo run -- --config ../setup.yaml --exec /bin/bash --prompt "\\[\\w+@.+\\s+.*\\]\\$\\s+"]```
